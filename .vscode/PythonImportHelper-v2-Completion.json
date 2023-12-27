@@ -1,0 +1,78 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "create_client",
+        "importPath": "supabase",
+        "description": "supabase",
+        "isExtraImport": true,
+        "detail": "supabase",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "supabase",
+        "description": "supabase",
+        "isExtraImport": true,
+        "detail": "supabase",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "callProfileAPI",
+        "importPath": "app.supabase",
+        "description": "app.supabase",
+        "isExtraImport": true,
+        "detail": "app.supabase",
+        "documentation": {}
+    },
+    {
+        "label": "callProfileAPI",
+        "kind": 2,
+        "importPath": "app.supabase",
+        "description": "app.supabase",
+        "peekOfCode": "def callProfileAPI() :\n    return requests.get(os.environ.get('PROFILE_URL')).json()",
+        "detail": "app.supabase",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\n@app.get(\"/\")\nasync def index():\n    return {\"message\": \"Welcome\"}\n@app.get(\"/profile\")\nasync def get_profile():\n    response = callProfileAPI()\n    return response",
+        "detail": "main",
+        "documentation": {}
+    }
+]
